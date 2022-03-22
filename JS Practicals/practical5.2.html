@@ -1,0 +1,15 @@
+<html>
+<script>
+
+function newstring(n){
+  document.write("Original String: "+n)
+  if(n.length>3){
+   return n.substring(0,3).toUpperCase()+ n.substring(3,n.length);
+  }
+else {
+    return n.toUpperCase()
+  }
+}
+document.write(newstring("AASHLESHA <br>"))
+</script>
+</html>

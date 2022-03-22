@@ -1,0 +1,27 @@
+<html>
+<head>
+<title> RemoveChar</title>
+</head>
+<body>
+<p> Click button to remove character at 5th index position</p>
+  <p>Original string is JavaScript</p>
+  <button onclick="removeCharacter(6)">
+        Remove Character
+    </button>
+      
+    <script>
+
+        function removeCharacter(position) {
+            originalString = 'JavaScript';
+              
+            newString = originalString.slice(0, position - 1)
+            + originalString.slice(position, originalString.length);
+            
+alert("New String is: " +newString);
+        
+ }
+
+        
+</script>
+</body>
+</html>

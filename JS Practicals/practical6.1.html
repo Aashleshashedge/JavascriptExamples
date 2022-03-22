@@ -1,0 +1,34 @@
+<html>
+   <head>   
+      <script type = "text/javascript">
+
+         
+var flash=0
+function lightning(){
+            
+ 
+flash=flash+1;
+
+if(flash==1){document.bgColor='purple'; setTimeout("lightning()",6000);}
+if(flash==2){document.bgColor='red'; setTimeout("lightning()",4000);}
+
+if(flash==3){document.bgColor='white'; setTimeout("lightning()",3000);}
+setTimeout("lightning()",1000);
+
+return false;
+
+}
+
+function msg(){
+alert("Purchase");
+}
+      </script>
+   </head>
+<body>
+       
+      <form>
+         <input type = "button" onClick=" lightning(); msg();" value = "Click to order">
+      </form>      
+     
+   </body>
+</html>

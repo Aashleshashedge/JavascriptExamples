@@ -1,0 +1,51 @@
+<html>
+<head>
+<script> 
+  
+ function convertint(){ 
+ var x=document.getElementById("t1").value; 
+ if(x==" ") 
+ { 
+ alert("Please Insert Value In The Entry Field");  }else 
+ { 
+  
+ if(isNaN(x)==true) 
+ { 
+ alert("Enter Value Is Not A Number Please Insert An  numberic value!")
+ document.getElementById("t1").value=""  } 
+ else 
+ { 
+ z=parseInt(x) 
+ alert("The Integer Value:-"+z) 
+ document.getElementById("t1").value=""  } 
+ } 
+ } 
+ function convertfloat(){ 
+ var x=document.getElementById("t1").value;  if(x=="") 
+ { 
+ alert("Please Insert Value In The Entry Field");  }else 
+ { 
+  
+ if(isNaN(x)==true) 
+ { 
+ alert("Enter Value Is Not A Number Please Insert An  numberic value!") 
+ document.getElementById("t1").value=""
+ } 
+ else 
+ { 
+ z=parseFloat(x) 
+ alert("The Float Value:-"+z) 
+ document.getElementById("t1").value=""  } 
+ } 
+ } 
+ </script> 
+</head> 
+<body> 
+ <form autocomplete="off"> 
+ <label>Enter The Number:-</label> 
+ <input type="text" id="t1">
+ <input type="button" value="Convert To Integer"  onclick="convertint()"> 
+ <input type="button" value="Convert To Float"  onclick="convertfloat()"> 
+ </form> 
+</body> 
+</html>

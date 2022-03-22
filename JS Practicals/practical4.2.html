@@ -1,0 +1,23 @@
+<html>
+<head>
+<title> occurrence</title>
+</head>
+<body>
+<script>
+function char_count(str, letter) 
+{
+ var letter_Count = 0;
+ for (var position = 0; position < str.length; position++) 
+ {
+    if (str.charAt(position) == letter) 
+      {
+      letter_Count += 1;
+      }
+  }
+  return letter_Count;
+}
+
+document.write(char_count('w3resource.com', 'o'));
+</script>
+</body>
+</html>

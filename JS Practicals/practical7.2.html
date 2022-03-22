@@ -1,0 +1,24 @@
+<html>
+<head>
+    <title>JavaScript Checkbox</title>
+</head>
+<body>
+<p>Select the checkbox if you agree </p>
+    <form>
+
+<input type="checkbox" id="agree" value="Checkbox is unchecked!"> Yes I agree!
+
+</form>
+<script>
+       document.getElementById('agree').onclick = function() {
+  
+    if ( this.checked ) {
+       
+        alert( this.value );
+    } else {
+       alert("Checkbox is checked!");
+    }
+};
+    </script>
+</body>
+</html>
